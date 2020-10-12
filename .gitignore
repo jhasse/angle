@@ -86,3 +86,4 @@ Release_Win32/
 Release_x64/
 TestResults.qpa
 .idea/
+/build-*/

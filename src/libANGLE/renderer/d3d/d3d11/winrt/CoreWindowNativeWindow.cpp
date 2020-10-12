@@ -213,7 +213,7 @@ HRESULT GetCoreWindowSizeInPixels(const ComPtr<ABI::Windows::UI::Core::ICoreWind
 
 static float GetLogicalDpi()
 {
-    ComPtr<ABI::Windows::Graphics::Display::IDisplayPropertiesStatics> displayProperties;
+    /*ComPtr<ABI::Windows::Graphics::Display::IDisplayPropertiesStatics> displayProperties;
 
     if (SUCCEEDED(GetActivationFactory(
             HStringReference(RuntimeClass_Windows_Graphics_Display_DisplayProperties).Get(),
@@ -224,7 +224,7 @@ static float GetLogicalDpi()
         {
             return dpi;
         }
-    }
+    }*/
 
     // Return 96 dpi as a default if display properties cannot be obtained.
     return 96.0f;
